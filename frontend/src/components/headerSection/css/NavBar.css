@@ -1,0 +1,105 @@
+.NavBar_div_nav {
+  height: 70px;
+  width: 100%;
+  background: rgb(130, 20, 23);
+  background: linear-gradient(
+    180deg,
+    rgba(130, 20, 23, 1) 0%,
+    rgba(168, 34, 26, 1) 100%,
+    rgba(67, 15, 10, 1) 100%,
+    rgba(255, 218, 211, 1) 100%
+  );
+  position: relative;
+}
+
+.NavBar_div_nav > .NavBar_div_nav-header {
+  display: inline;
+}
+
+.NavBar_div_nav > .NavBar_div_nav-header > .NavBar_div_nav-title {
+  display: inline-flex;
+  color: #fff;
+  padding: 10px;
+  padding-left: 20px;
+}
+
+.NavBar_div_nav > .NavBar_div_nav-btn {
+  display: none;
+}
+
+.NavBar_div_nav > .NavBar_div_nav-links {
+  display: inline;
+  float: right;
+  font-size: 18px;
+  padding: 10px;
+  z-index: 1;
+}
+
+.NavBar_div_nav > .NavBar_div_nav-links > a {
+  display: inline-block;
+  padding: 13px 10px 13px 10px;
+  text-decoration: none;
+  color: #efefef;
+}
+
+.NavBar_div_nav > .NavBar_div_nav-links > a:hover {
+  color: #fff;
+  text-shadow: 0 0 10px #fff;
+}
+
+.NavBar_div_nav > #NavBar_div_nav-check {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .NavBar_div_nav > .NavBar_div_nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 10px;
+    z-index: 5;
+  }
+  .NavBar_div_nav > .NavBar_div_nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 24px;
+    padding: 13px;
+  }
+  .NavBar_div_nav > .NavBar_div_nav-btn > label:hover,
+  .NavBar_div_nav #NavBar_div_nav-check:checked ~ .NavBar_div_nav-btn > label {
+    text-shadow: 0 0 10px #fff;
+  }
+  .NavBar_div_nav > .NavBar_div_nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #eee;
+  }
+  .NavBar_div_nav > .NavBar_div_nav-links {
+    padding: 0px;
+    position: absolute;
+    display: block;
+    width: 100%;
+    background: #a8241c;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 67px;
+    left: 0px;
+    z-index: 2;
+  }
+  .NavBar_div_nav > .NavBar_div_nav-links > a {
+    display: block;
+    width: 95%;
+    text-align: center;
+  }
+  .NavBar_div_nav
+    > #NavBar_div_nav-check:not(:checked)
+    ~ .NavBar_div_nav-links {
+    height: 0px;
+  }
+  .NavBar_div_nav > #NavBar_div_nav-check:checked ~ .NavBar_div_nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
+}

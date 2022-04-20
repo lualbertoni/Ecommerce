@@ -1,0 +1,14 @@
+.addButton_div_button {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  border: none;
+  background: none;
+  cursor: pointer;
+  z-index: 12;
+}
+
+.addButton_div_button_image:hover {
+  transform: rotate(360deg);
+  transition: all 1s;
+}

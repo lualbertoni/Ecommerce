@@ -1,0 +1,16 @@
+/.vscode
+
+/backend/node_modules
+/backend/package-lock.json
+
+/backend/src/public/uploads/categories/*
+/backend/src/public/uploads/products/*
+/backend/src/public/uploads/temp/*
+
+!/backend/src/public/uploads/categories/Readme.md
+!/backend/src/public/uploads/products/Readme.md
+!/backend/src/public/uploads/temp/Readme.md
+
+/frontend/node_modules
+/frontend/package-lock.json
+/frontend/build
